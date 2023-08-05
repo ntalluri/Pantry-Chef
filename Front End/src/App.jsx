@@ -57,7 +57,7 @@ const App = () => {
       }
       else if (res.status === 200) {
         return res.json()
-      } else if (res.status === 405) {
+      } else if (res.status === 500) {
         alert('unknown error')
         return false;
       }
@@ -146,7 +146,7 @@ const App = () => {
     setSelectedIngredients(ingredients);
 
     // logic to get recipes from database
-    fetch("http://localhost:8000/register", {
+    fetch("http://localhost:8000/search", {
       method: "POST",
       body: JSON.stringify({
         ingredients: selectedIngredients, // sends array of ingredients
