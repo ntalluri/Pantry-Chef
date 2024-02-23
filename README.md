@@ -8,7 +8,7 @@
 - vscode
 - MySQL
 
-1. clone repo 
+1. clone repo! 
 
 2. create database in mysql following the directions in the data folder
 - in data/pantrychef_parser.py make sure global params are set correctly
